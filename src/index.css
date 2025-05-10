@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+}
+#sectionA {
+  background-image: url("green-grass-1.jpg");
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  height: 80vh;
+
+  h1 {
+    padding-left: 0.5rem;
+    font-size: 4rem;
+  }
+
+  h2 {
+    padding-left: 0.7rem;
+    font-size: 1.3rem;
+    color: white;
+  }
+}
+
+#sectionB {
+  padding-top: 2rem;
+  position: relative;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 300;
+  }
+
+  
+  .image-container {
+    position: absolute;
+
+    height: calc(100vw);
+
+    top: -6rem;
+    right: 2rem;
+  }
+
+  .image-wrap {
+    width: 20vw;
+    height: 20vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+  }
+
+  .image-wrap::after {
+    content: " ";
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    display: block;
+    box-shadow: 0 0 0px 5px rgb(255 255 255);
+  }
+}
+
+#sectionC {
+  background: #ffaa25;
+  padding: 1rem;
+  display: flex;
+
+  ul li {
+    font-family: "Roboto";
+    font-weight: 300;
+  }
+
+  .service {
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding: 0.7rem;
+    background-color: white;
+
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  
+  }
+}
