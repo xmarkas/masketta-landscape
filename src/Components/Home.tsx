@@ -7,21 +7,42 @@ export const Home = () => {
     <>
       <Box>
         <Grid container>
-          <Grid size={12} id="sectionA">
-            <Typography variant="h1">MASKETTA</Typography>
-            <Typography variant="h2">
-              landscape, gardening, and window washing services
-            </Typography>
+          <Grid container size={12} id="sectionA">
+            <Grid size={6}>
+              <Typography variant="h1">MASKETTA</Typography>
+              <Typography variant="h2">
+                landscape, gardening, and window washing services
+              </Typography>
+            </Grid>
+            <Grid size={6} p={2} id="contact">
+              <Button size="small" variant="contained">
+                Make Payment
+              </Button>
+              <Button size="small" variant="contained">
+                Request Quote
+              </Button>
+              <Typography variant="h2">(515) 309 - 2978</Typography>
+            </Grid>
           </Grid>
-          <Grid size={12} id="sectionB">
-            <Grid size={7} p={4}>
+          <Grid
+            size={12}
+            id="sectionB"
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            <Grid size={8} p={4}>
               <Typography variant="h2">Service</Typography>
               <Typography variant="h3">
                 Providing homeowners with reliable and detailed services. Easy
                 online access for setting up service and making payments.
               </Typography>
+              <Typography variant="h3">
+                Serving the Greater Des Moines Metro Area.
+              </Typography>
             </Grid>
-            <Grid size={5}>
+
+            {/* <Grid size={5} display={"none"}>
               <div className="image-container">
                 <div
                   className="image-wrap"
@@ -36,31 +57,42 @@ export const Home = () => {
                   style={{ backgroundImage: "url('hardscape.jpg')" }}
                 ></div>
               </div>
-            </Grid>
+            </Grid> */}
           </Grid>
-          <Grid size={12} id="sectionC" rowSpacing={2} columnSpacing={2}>
-            <ServiceCard  />
-
-            <Grid size={6}>
-              <Box className="service">
-                <Button
-                  id="maint-go"
-                  variant="contained"
-                  size="large"
-                  endIcon={<ArrowForward />}
-                >
-                  go
-                </Button>
-                <Typography variant="h4">
-                  Yard Maintenance - Weekly, Bi-Weekly, or One-Time
-                </Typography>
-                <List>
-                  <ListItem>Mowing and Edging</ListItem>
-                  <ListItem>Weeding and Bed Maintentance</ListItem>
-                  <ListItem>Fertilizing, Pruning, and Hedge Trimming</ListItem>
-                </List>
-              </Box>
-            </Grid>
+          <Grid
+            container
+            id="sectionC"
+            rowSpacing={1.5}
+            bgcolor={"white"}
+            width={"100%"}
+            columnSpacing={1.5}
+            spacing={1.5}
+          >
+            <ServiceCard
+              title={"Lawn Service"}
+              subtitle={"(Weekly, Bi-Weekly, or One-time)"}
+              listItems={[
+                "Mowing and Edging",
+                "Yard Clean-up",
+                "Tree and Shrub maintenance",
+                "Fertilizing",
+              ]}
+            />
+            <ServiceCard
+              title={"some thing here"}
+              subtitle={"Weekly, Bi-Weekly, or One-time"}
+              listItems={["first thing, second thing, third thing"]}
+            />
+            <ServiceCard
+              title={"some thing here"}
+              subtitle={"Weekly, Bi-Weekly, or One-time"}
+              listItems={["first thing, second thing, third thing"]}
+            />
+            <ServiceCard
+              title={"some thing here"}
+              subtitle={"Weekly, Bi-Weekly, or One-time"}
+              listItems={["first thing, second thing, third thing"]}
+            />
           </Grid>
         </Grid>
       </Box>

@@ -1,32 +1,38 @@
 import { ArrowForward } from "@mui/icons-material";
 import { Grid, Box, Button, Typography, List, ListItem } from "@mui/material";
+import { FC } from "react";
 
-export const ServiceCard = () => {
-    const listItems: string[] = [];
-    const t = "qwerty"
+interface CardProps {
+  title: string;
+  subtitle: string;
+  listItems: string[];
+}
+
+export const ServiceCard: FC<CardProps> = ({ title, subtitle, listItems }) => {
   return (
-    
-    <Grid size={6}>
+    <Grid
+      size={6}
+      height={"50vw"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      display={"flex"}
+      position={"relative"}
+    >
+      <img src={"maintenance.jpg"} className="service-img" />
       <Box className="service">
-        <Typography variant="h4">{t}</Typography>
+        <Typography variant="h4">{title}</Typography>
+        <Typography variant="h5">{subtitle}</Typography>
         <List>
           {listItems.map((i) => (
-            <ListItem>{i}</ListItem>
+            <ListItem>
+              <Typography fontWeight={300}>{i}</Typography>
+            </ListItem>
           ))}
-
-          <ListItem>Weeding and Bed Maintentance</ListItem>
-          <ListItem>Fertilizing, Pruning, and Hedge Trimming</ListItem>
         </List>
-        <Button
-          id="maint-go"
-          variant="contained"
-          size="large"
-          endIcon={<ArrowForward />}
-        >
+        <Button variant="contained" size="large" endIcon={<ArrowForward />}>
           go
         </Button>
       </Box>
     </Grid>
-    
   );
 };
