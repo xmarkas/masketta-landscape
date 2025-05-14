@@ -1,5 +1,13 @@
 import { ArrowForward } from "@mui/icons-material";
-import { Grid, Box, Button, Typography, List, ListItem } from "@mui/material";
+import {
+  Grid,
+  Box,
+  Button,
+  Typography,
+  List,
+  ListItem,
+  Container,
+} from "@mui/material";
 import { FC } from "react";
 
 interface CardProps {
@@ -12,13 +20,12 @@ export const ServiceCard: FC<CardProps> = ({ title, subtitle, listItems }) => {
   return (
     <Grid
       size={6}
-      height={"50vw"}
+      height={"40vw"}
       alignItems={"center"}
       justifyContent={"center"}
       display={"flex"}
       position={"relative"}
     >
-      <img src={"maintenance.jpg"} className="service-img" />
       <Box className="service">
         <Typography variant="h4">{title}</Typography>
         <Typography variant="h5">{subtitle}</Typography>

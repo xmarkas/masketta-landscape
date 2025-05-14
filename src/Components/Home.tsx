@@ -21,7 +21,7 @@ export const Home = () => {
               <Button size="small" variant="contained">
                 Request Quote
               </Button>
-              <Typography variant="h2">(515) 309 - 2978</Typography>
+              <Typography color="white" textAlign={"center"} fontSize={"1rem"}>Call: (515) 309 - 2978</Typography>
             </Grid>
           </Grid>
           <Grid
@@ -42,22 +42,6 @@ export const Home = () => {
               </Typography>
             </Grid>
 
-            {/* <Grid size={5} display={"none"}>
-              <div className="image-container">
-                <div
-                  className="image-wrap"
-                  style={{ backgroundImage: "url('planting.jpg')" }}
-                ></div>
-                <div
-                  className="image-wrap"
-                  style={{ backgroundImage: "url('maintenance.jpg')" }}
-                ></div>
-                <div
-                  className="image-wrap"
-                  style={{ backgroundImage: "url('hardscape.jpg')" }}
-                ></div>
-              </div>
-            </Grid> */}
           </Grid>
           <Grid
             container
@@ -79,19 +63,19 @@ export const Home = () => {
               ]}
             />
             <ServiceCard
-              title={"some thing here"}
-              subtitle={"Weekly, Bi-Weekly, or One-time"}
-              listItems={["first thing, second thing, third thing"]}
+              title={"Hardscapes"}
+              subtitle={"Patios, Retaining Walls, Walkways, and more"}
+              listItems={[]}
             />
             <ServiceCard
-              title={"some thing here"}
-              subtitle={"Weekly, Bi-Weekly, or One-time"}
-              listItems={["first thing, second thing, third thing"]}
+              title={"Planting Service"}
+              subtitle={"Seasonal Planting and Garden Design"}
+              listItems={["Add Annuals, Shrubs, and Pots", "Get a good balance of year round and perinial shrubs!"]}
             />
             <ServiceCard
-              title={"some thing here"}
-              subtitle={"Weekly, Bi-Weekly, or One-time"}
-              listItems={["first thing, second thing, third thing"]}
+              title={"Window Washing"}
+              subtitle={"Full service window cleaning, Inside and Out!"}
+              listItems={[]}
             />
           </Grid>
         </Grid>
