@@ -18,7 +18,6 @@ export const App = () => {
         <>
         <Home />
         </>
-        <Inspector />
       </Provider>
     </StrictMode>
   );

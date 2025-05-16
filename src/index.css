@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 
 :root {
   --orange: #ff7b00;
@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: 'Heebo', serif;
+  font-family: "Heebo", serif;
 }
 
 #sectionA {
@@ -16,6 +16,20 @@ body {
   background-size: fill;
   background-repeat: no-repeat;
   height: 80vh;
+
+  @media screen and (max-width: 600px) {
+    height: 100vw;
+    padding: 1rem;
+    display: block;
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    #contact {
+      display: block!important;
+    }
+  }
 
   h1 {
     padding-left: 0.5rem;
@@ -31,7 +45,7 @@ body {
 
   #contact {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: self-start;
 
     button {
@@ -42,7 +56,6 @@ body {
 }
 
 #sectionB {
-  
   background-color: var(--lightgray);
   border-top: solid 0.8rem white;
 
@@ -57,7 +70,6 @@ body {
     font-weight: 300;
     text-align: center;
   }
-
 }
 
 #sectionC {
@@ -87,18 +99,17 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2rem;
 
   h4 {
     font-size: 2rem;
     font-weight: 500;
-    font-family: 'Heebo', serif;
-    
+    font-family: "Heebo", serif;
   }
 
   h5 {
     font-size: 1.2rem;
     font-weight: 300;
-    
   }
 
   p {
@@ -106,9 +117,32 @@ body {
   }
 
   li {
-   justify-content: center;
+    justify-content: center;
   }
-
-  
 }
 
+#footbar {
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+#tri-wrap {
+  display: none;
+  rotate: 90deg;
+  /* height: 25%;
+  width: 25%; */
+  position: absolute;
+  /* min-height: 25%; */
+  z-index: 5;
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  bottom: -1px;
+  right: -1px;
+}
+
+#tri {
+  width: 200px;
+  aspect-ratio: 1;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  background-color: white;
+}

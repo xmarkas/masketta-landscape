@@ -1,6 +1,6 @@
-import { Box, Button, Grid, List, ListItem, Typography } from "@mui/material";
-import { ArrowForward } from "@mui/icons-material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import { ServiceCard } from "./ServiceCard";
+import { Footbar } from "./Footbar";
 
 export const Home = () => {
   return (
@@ -8,19 +8,19 @@ export const Home = () => {
       <Box>
         <Grid container>
           <Grid container size={12} id="sectionA">
-            <Grid size={6}>
+            <Grid size={{md: 6, xs:12}}>
               <Typography variant="h1">MASKETTA</Typography>
               <Typography variant="h2">
                 landscape, gardening, and window washing services
               </Typography>
             </Grid>
-            <Grid size={6} p={2} id="contact">
-              <Button size="small" variant="contained">
+            <Grid size={{md: 6, xs:12}} p={2} id="contact">
+              {/* <Button disabled size="small" variant="contained">
                 Make Payment
               </Button>
-              <Button size="small" variant="contained">
+              <Button disabled size="small" variant="contained">
                 Request Quote
-              </Button>
+              </Button> */}
               <Typography color="white" textAlign={"center"} fontSize={"1rem"}>Call: (515) 309 - 2978</Typography>
             </Grid>
           </Grid>
@@ -34,8 +34,7 @@ export const Home = () => {
             <Grid size={8} p={4}>
               <Typography variant="h2">Service</Typography>
               <Typography variant="h3">
-                Providing homeowners with reliable and detailed services. Easy
-                online access for setting up service and making payments.
+                Providing homeowners with reliable and detailed services. 
               </Typography>
               <Typography variant="h3">
                 Serving the Greater Des Moines Metro Area.
@@ -63,11 +62,6 @@ export const Home = () => {
               ]}
             />
             <ServiceCard
-              title={"Hardscapes"}
-              subtitle={"Patios, Retaining Walls, Walkways, and more"}
-              listItems={[]}
-            />
-            <ServiceCard
               title={"Planting Service"}
               subtitle={"Seasonal Planting and Garden Design"}
               listItems={["Add Annuals, Shrubs, and Pots", "Get a good balance of year round and perinial shrubs!"]}
@@ -79,6 +73,7 @@ export const Home = () => {
             />
           </Grid>
         </Grid>
+        <Footbar />
       </Box>
     </>
   );
