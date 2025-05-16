@@ -53,6 +53,13 @@ body {
       background-color: white;
     }
   }
+
+  img {
+    width: 100px;
+    position: absolute;
+    top: 18px;
+    left: 34%;
+  }
 }
 
 #sectionB {

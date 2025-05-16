@@ -8,11 +8,13 @@ export const Home = () => {
       <Box>
         <Grid container>
           <Grid container size={12} id="sectionA">
+          <img src="raccoon_alpha.png" />
             <Grid size={{md: 6, xs:12}}>
               <Typography variant="h1">MASKETTA</Typography>
               <Typography variant="h2">
                 landscape, gardening, and window washing services
               </Typography>
+              
             </Grid>
             <Grid size={{md: 6, xs:12}} p={2} id="contact">
               {/* <Button disabled size="small" variant="contained">
