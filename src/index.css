@@ -11,23 +11,23 @@ body {
 }
 
 #sectionA {
-  background-image: url("green-grass-1.jpg");
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  height: 80vh;
+  #background-home {
+    width: 100%;
+  }
+
+  #back-overlay {
+    position: absolute;
+    width: 100%;
+  }
 
   @media screen and (max-width: 600px) {
-    height: 100vw;
-    padding: 1rem;
-    display: block;
-
-    h1, h2 {
+    h1,
+    h2 {
       text-align: center;
     }
 
     #contact {
-      display: block!important;
+      display: block !important;
     }
   }
 
@@ -54,11 +54,11 @@ body {
     }
   }
 
-  img {
+  #logo {
     width: 100px;
     position: absolute;
-    top: 18px;
-    left: 34%;
+    top: 7px;
+    left: 68px;
   }
 }
 

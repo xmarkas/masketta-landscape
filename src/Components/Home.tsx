@@ -8,22 +8,35 @@ export const Home = () => {
       <Box>
         <Grid container>
           <Grid container size={12} id="sectionA">
-          <img src="raccoon_alpha.png" />
-            <Grid size={{md: 6, xs:12}}>
-              <Typography variant="h1">MASKETTA</Typography>
-              <Typography variant="h2">
-                landscape, gardening, and window washing services
-              </Typography>
-              
+            <Grid size={12}>
+            <img id="background-home" src="green-grass-1.jpg" />
             </Grid>
-            <Grid size={{md: 6, xs:12}} p={2} id="contact">
-              {/* <Button disabled size="small" variant="contained">
+            
+            
+            <Grid container id="back-overlay">
+              <Grid size={{ md: 6, xs: 12 }} pt={"40px"} pl={"20px"}>
+              <img id="logo" src="raccoon_alpha.png" />
+
+                <Typography variant="h1">MASKETTA</Typography>
+                <Typography variant="h2">
+                  landscape, gardening, and window washing services
+                </Typography>
+              </Grid>
+              <Grid size={{ md: 6, xs: 12 }} p={2} id="contact">
+                {/* <Button disabled size="small" variant="contained">
                 Make Payment
               </Button>
               <Button disabled size="small" variant="contained">
                 Request Quote
               </Button> */}
-              <Typography color="white" textAlign={"center"} fontSize={"1rem"}>Call: (515) 309 - 2978</Typography>
+                <Typography
+                  color="white"
+                  textAlign={"center"}
+                  fontSize={"1rem"}
+                >
+                  Call: (515) 329 - 4660
+                </Typography>
+              </Grid>
             </Grid>
           </Grid>
           <Grid
@@ -36,13 +49,12 @@ export const Home = () => {
             <Grid size={8} p={4}>
               <Typography variant="h2">Service</Typography>
               <Typography variant="h3">
-                Providing homeowners with reliable and detailed services. 
+                Providing homeowners with reliable and detailed services.
               </Typography>
               <Typography variant="h3">
                 Serving the Greater Des Moines Metro Area.
               </Typography>
             </Grid>
-
           </Grid>
           <Grid
             container
@@ -66,7 +78,10 @@ export const Home = () => {
             <ServiceCard
               title={"Planting Service"}
               subtitle={"Seasonal Planting and Garden Design"}
-              listItems={["Add Annuals, Shrubs, and Pots", "Get a good balance of year round and perinial shrubs!"]}
+              listItems={[
+                "Add Annuals, Shrubs, and Pots",
+                "Get a good balance of year round and perinial shrubs!",
+              ]}
             />
             <ServiceCard
               title={"Window Washing"}
