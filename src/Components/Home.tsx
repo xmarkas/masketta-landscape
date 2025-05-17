@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import { ServiceCard } from "./ServiceCard";
 import { Footbar } from "./Footbar";
 
@@ -9,13 +9,12 @@ export const Home = () => {
         <Grid container>
           <Grid container size={12} id="sectionA">
             <Grid size={12}>
-            <img id="background-home" src="green-grass-1.jpg" />
+              <img id="background-home" src="green-grass-1.jpg" />
             </Grid>
-            
-            
+
             <Grid container id="back-overlay">
-              <Grid size={{ md: 6, xs: 12 }} pt={"40px"} pl={"20px"}>
-              <img id="logo" src="raccoon_alpha.png" />
+              <Grid size={{ md: 6, xs: 12 }} >
+                <img id="logo" src="raccoon_alpha.png" />
 
                 <Typography variant="h1">MASKETTA</Typography>
                 <Typography variant="h2">
@@ -33,6 +32,8 @@ export const Home = () => {
                   color="white"
                   textAlign={"center"}
                   fontSize={"1rem"}
+                  component={"a"}
+                  href="tel:+15153294660"
                 >
                   Call: (515) 329 - 4660
                 </Typography>
@@ -74,6 +75,7 @@ export const Home = () => {
                 "Tree and Shrub maintenance",
                 "Fertilizing",
               ]}
+              background={{ background: "var(--lightgray)" }}
             />
             <ServiceCard
               title={"Planting Service"}
@@ -82,11 +84,24 @@ export const Home = () => {
                 "Add Annuals, Shrubs, and Pots",
                 "Get a good balance of year round and perinial shrubs!",
               ]}
+              background={{
+                background: "linear-gradient(#ff9633 30%, #ff7b0017)",
+              }}
             />
             <ServiceCard
               title={"Window Washing"}
               subtitle={"Full service window cleaning, Inside and Out!"}
               listItems={[]}
+              background={{ background: "#aaaaaa" }}
+            />
+            <ServiceCard
+              title={"Site Under Construction"}
+              subtitle={"New Features"}
+              listItems={[
+                "Online Payment System",
+                "Scheduling and Appointments",
+              ]}
+              background={{ background: "#aaaaaa" }}
             />
           </Grid>
         </Grid>

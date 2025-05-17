@@ -1,7 +1,5 @@
 import { StrictMode } from 'react';
-import { createStore } from 'tinybase';
-import { Provider, useCreateStore } from 'tinybase/ui-react';
-import { Inspector } from 'tinybase/ui-react-inspector';
+import { Provider } from 'tinybase/ui-react';
 import { Home } from './Components/Home';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';

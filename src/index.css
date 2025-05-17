@@ -11,6 +11,7 @@ body {
 }
 
 #sectionA {
+  overflow: hidden;
   #background-home {
     width: 100%;
   }
@@ -18,21 +19,23 @@ body {
   #back-overlay {
     position: absolute;
     width: 100%;
+
+    padding-top: 40px;
+    padding-left: 20px;
+
+    a {
+      padding: 0.5rem;
+      border-radius: 15px;
+      border: solid 0px white;
+      background-color: rgba(0, 0, 0, 0.151);
+      font-size: 1.6rem;
+      text-decoration: none;
+    }
   }
 
-  @media screen and (max-width: 600px) {
-    h1,
-    h2 {
-      text-align: center;
-    }
-
-    #contact {
-      display: block !important;
-    }
-  }
+ 
 
   h1 {
-    padding-left: 0.5rem;
     font-size: 4rem;
   }
 
@@ -58,7 +61,32 @@ body {
     width: 100px;
     position: absolute;
     top: 7px;
-    left: 68px;
+    left: 200px;
+  }
+
+  @media screen and (max-width: 600px) {
+    #back-overlay {
+      padding-left: 0;
+    }
+
+    #background-home {
+      width: auto;
+      height: 95vw;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    #contact {
+      display: block !important;
+      text-align: center;
+    }
+
+    #logo {
+      left: 205px;
+    }
   }
 }
 
@@ -86,18 +114,6 @@ body {
   ul li {
     font-family: "Roboto";
     font-weight: 300;
-  }
-
-  > :nth-child(1) {
-    background-color: var(--lightgray);
-  }
-
-  > :nth-child(2) {
-    background: linear-gradient(#ff9633 30%, #ff7b0017);
-  }
-
-  > :nth-child(n + 3) {
-    background-color: #aaaaaa;
   }
 }
 

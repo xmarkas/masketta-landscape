@@ -6,9 +6,10 @@ interface CardProps {
   title: string;
   subtitle: string;
   listItems: string[];
+  background: {}
 }
 
-export const ServiceCard: FC<CardProps> = ({ title, subtitle, listItems }) => {
+export const ServiceCard: FC<CardProps> = ({ title, subtitle, listItems, background }) => {
   return (
     <Grid
       size={{md: 6, xs: 12}}
@@ -17,13 +18,14 @@ export const ServiceCard: FC<CardProps> = ({ title, subtitle, listItems }) => {
       justifyContent={"center"}
       display={"flex"}
       position={"relative"}
+      sx={background}
     >
       <Box className="service">
         <Typography variant="h4">{title}</Typography>
         <Typography variant="h5">{subtitle}</Typography>
         <List>
-          {listItems.map((i) => (
-            <ListItem>
+          {listItems.map((i, index) => (
+            <ListItem key={index}>
               <Typography fontWeight={300}>{i}</Typography>
             </ListItem>
           ))}
