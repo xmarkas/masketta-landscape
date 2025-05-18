@@ -35,7 +35,7 @@ export const Home = () => {
                   component={"a"}
                   href="tel:+15153294660"
                 >
-                  Call: (515) 329 - 4660
+                  Call/Text: 515.329.4660
                 </Typography>
               </Grid>
             </Grid>
