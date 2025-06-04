@@ -12,8 +12,9 @@ body {
 
 #sectionA {
   overflow: hidden;
-  #background-home {
-    width: 100%;
+
+  .background-home {
+    height: 40vw;
   }
 
   #back-overlay {
@@ -69,7 +70,7 @@ body {
       padding-left: 0;
     }
 
-    #background-home {
+    .background-home {
       width: auto;
       height: 95vw;
     }

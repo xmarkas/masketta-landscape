@@ -8,12 +8,14 @@ export const Home = () => {
       <Box>
         <Grid container>
           <Grid container size={12} id="sectionA">
-            <Grid size={12}>
-              <img id="background-home" src="green-grass-1.jpg" />
+            <Grid size={{xs:12, md:6}}>
+              <img className="background-home" src="green-grass-1.jpg" />
             </Grid>
-
+            <Grid size={{xs:12, md:6}}>
+              <img className="background-home" src="windowwash.jpg" />
+            </Grid>
             <Grid container id="back-overlay">
-              <Grid size={{ md: 6, xs: 12 }} >
+              <Grid size={{ md: 6, xs: 12 }}>
                 <img id="logo" src="raccoon_alpha.png" />
 
                 <Typography variant="h1">MASKETTA</Typography>
