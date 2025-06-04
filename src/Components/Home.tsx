@@ -12,7 +12,7 @@ export const Home = () => {
               <img className="background-home" src="green-grass-1.jpg" />
             </Grid>
             <Grid size={{xs:12, md:6}}>
-              <img className="background-home" src="windowwash.jpg" />
+              <img className="background-home" src="windowwash2.jpg" />
             </Grid>
             <Grid container id="back-overlay">
               <Grid size={{ md: 6, xs: 12 }}>

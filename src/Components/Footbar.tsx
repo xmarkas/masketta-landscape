@@ -6,7 +6,7 @@ export const Footbar = () => {
       <Grid container>
         
         <Grid size={12}>
-            <Typography>Masketta<br/>Des Moines, Iowa<br/>515.329.4660</Typography>
+            <Typography>Masketta<br/>Des Moines, Iowa<br/>515.329.4660<br/>mark@masketta.com</Typography>
         </Grid>
       </Grid>
       <Grid container>
