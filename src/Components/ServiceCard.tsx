@@ -1,18 +1,23 @@
-import { ArrowForward } from "@mui/icons-material";
-import { Grid, Box, Button, Typography, List, ListItem } from "@mui/material";
+import { Grid, Box, Typography, List, ListItem } from "@mui/material";
 import { FC } from "react";
+// import { Link } from "react-router-dom";
 
 interface CardProps {
   title: string;
   subtitle: string;
   listItems: string[];
-  background: {}
+  background: {};
 }
 
-export const ServiceCard: FC<CardProps> = ({ title, subtitle, listItems, background }) => {
+export const ServiceCard: FC<CardProps> = ({
+  title,
+  subtitle,
+  listItems,
+  background,
+}) => {
   return (
     <Grid
-      size={{md: 6, xs: 12}}
+      size={{ md: 6, xs: 12 }}
       // height={"40vw"}
       alignItems={"center"}
       justifyContent={"center"}
@@ -30,9 +35,9 @@ export const ServiceCard: FC<CardProps> = ({ title, subtitle, listItems, backgro
             </ListItem>
           ))}
         </List>
-        <Button variant="contained" size="large" endIcon={<ArrowForward />}>
-          go
-        </Button>
+        {/* <Link className="button-link" to={"/windows"}>
+          {"Go"}
+        </Link> */}
       </Box>
       <div id="tri-wrap">
         <div id="tri"></div>

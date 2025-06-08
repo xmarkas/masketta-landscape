@@ -1,4 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export const Footbar = () => {
   return (
@@ -12,6 +13,9 @@ export const Footbar = () => {
       <Grid container>
         <Grid size={12}>
             <Typography>Masketta Home Services. All Rights Reserved 2025.</Typography>
+        </Grid>
+        <Grid size={12}>
+          <Link to="/privacy">Privacy Policy</Link>
         </Grid>
       </Grid>
     </Box>
